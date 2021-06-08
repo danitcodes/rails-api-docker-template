@@ -13,5 +13,6 @@ RUN chmod +x /usr/bin/entrypoint.sh
 # RUN sed -i -e 's/\r$//' /usr/bin/entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]
-EXPOSE 3000
+EXPOSE 3001
+#updated to reflect the change in docker-compose.yaml file (see note)
 CMD ["rails", "server", "-b", "0.0.0.0"]
